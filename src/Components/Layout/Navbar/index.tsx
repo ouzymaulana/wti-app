@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-transparent border-gray-200 sticky top-0">
+    <nav className="border-gray-200 sticky top-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8">
         <a href="https://www.widetechnologies.co.id/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/logo.svg" className="h-8" height={800} width={60} alt="Logo" />

@@ -12,7 +12,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className='px-32'>
+    <div className='px-32 max-sm:px-10'>
       <p className='text-2xl font-medium'>About Us</p>
       <div className='flex max-lg:flex-col gap-6'>
         <div className='flex-1'>
@@ -33,8 +33,8 @@ const About = () => {
               </div>
             </div>
         </div>
-        <div className='flex-1 mt-4 flex justify-center items-center'>
-          <img className='rounded-xl w-4/5' src="/images.jpeg" alt="foto" data-aos='fade-up-right' />
+        <div className='flex-1 mt-4 flex justify-center items-center max-sm:mb-5'>
+          <img className='rounded-xl w-4/5 max-sm:w-full' src="/images.jpeg" alt="foto" data-aos='fade-up-right' />
         </div>
       </div>
     </div>
