@@ -9,6 +9,9 @@ export default {
       backgroundImage: {
         homePage: "url(./../src/assets/HomePage2.svg)",
         wideIcon: "url(./../src/assets/wide.svg)"
+      },
+      fontFamily: {
+        conforter: ["Anton"],
       }
     },
   },
