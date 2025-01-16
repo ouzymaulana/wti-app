@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        homePage: "url(./../src/assets/HomePage2.svg)"
+        homePage: "url(./../src/assets/HomePage2.svg)",
+        wideIcon: "url(./../src/assets/wide.svg)"
       }
     },
   },
