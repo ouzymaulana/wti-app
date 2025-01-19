@@ -4,9 +4,9 @@ import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
   return (
-    <div className='bg-homePage h-screen w-100 bg-cover'>
+    <div className='bg-homePage h-screen bg-cover sm:flex sm:justify-center'>
       <Navbar/>
-      <div className="container h-5/6 mx-auto p-4 relative">
+      <div className="container overflow-auto max-h-screen sm:pt-32 max-sm:pt-24 max-sm:px-3 relative">
         <Outlet />
       </div>
     </div>

@@ -18,8 +18,8 @@ const Counter = () => {
   };
 
   return (
-    <div className="App h-full flex justify-center items-center">
-      <div className="max-w-sm p-4 bg-white border border-gray-200 rounded-lg flex flex-col shadow w-1/2 h-3/4">
+    <div className="h-full flex justify-center items-center max-sm:mt-10 py-10">
+      <div className="max-w-sm p-4 bg-white border border-gray-200 rounded-lg flex flex-col shadow w-full h-full">
         <div
           className="flex justify-center items-center text-8xl"
           style={{ flex: 11 }}
