@@ -11,12 +11,14 @@ type DataType = {
 
 const ApiIntegration = () => {
   const [data, setData] = useState<DataType[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const getData = async (value?: number) => {
     const url = value
       ? `https://jsonplaceholder.typicode.com/todos/${value}`
       : `https://jsonplaceholder.typicode.com/todos`;
     try {
+      setIsLoading(true);
       await axios.get(url).then((response) => {
         if (response.status === 200) {
           const data = response.data;
@@ -25,6 +27,7 @@ const ApiIntegration = () => {
           setData(result);
         }
       });
+      setIsLoading(false);
     } catch (error) {
       console.error(error);
     }
@@ -100,6 +103,11 @@ const ApiIntegration = () => {
                   </div>
                 </li>
               ))}
+              {isLoading && (
+                <div className="flex justify-center">
+                  <img src="./../../../public/loading.gif" width={80} height={100} alt="loading" />
+                </div>
+              )}
             </ul>
           )}
         </div>
